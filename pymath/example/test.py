@@ -1,9 +1,9 @@
-from math_ops.math import square_cpp, cube_cpp
+from pymath import square_cpp, cube_cpp, square_cuda, cube_cuda
 
 
 def main():
     base = 2
-    squared = square_cpp(base=base)
+    squared = square_cuda(base=base)
     print(squared)
 
     cubed = cube_cpp(base=base)

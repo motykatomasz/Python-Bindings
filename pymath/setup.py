@@ -72,9 +72,9 @@ setup(
     author_email='',
     description='Playground for learning how to bind c++ with python',
     long_description='',
-    packages=find_packages('src'),
-    package_dir={'':'src'},
-    ext_modules=[CMakeExtension('math_ops/math')],
+    packages=find_packages('math'),
+    package_dir={'':'math'},
+    ext_modules=[CMakeExtension('modules')],
     cmdclass=dict(build_ext=CMakeBuild),
     zip_safe=False,
 )

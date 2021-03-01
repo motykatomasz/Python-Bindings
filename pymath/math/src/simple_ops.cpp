@@ -1,3 +1,5 @@
+#include <math/simple_ops.hpp>
+
 int square_cpp(int base) {
     return base * base;
 }

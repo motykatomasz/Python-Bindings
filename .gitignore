@@ -2,3 +2,4 @@
 */libs/*
 *.egg-info
 *.so
+.vscode
