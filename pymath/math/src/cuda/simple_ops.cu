@@ -2,7 +2,7 @@
 #include <cuda_runtime.h>
 #include <cuda_runtime_api.h>
 
-#include <math/simple_ops.hpp>
+#include <math/cuda_ops.hpp>
 
 __global__ void square(int* d_out, const int base){
     *d_out = base * base;

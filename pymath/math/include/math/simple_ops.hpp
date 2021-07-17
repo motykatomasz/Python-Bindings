@@ -1,8 +1,16 @@
-int square_cpp(int base);
+#pragma once
 
-int cube_cpp(int base);
+struct SimpleOps {
+bool gpu;
 
+explicit SimpleOps(bool gpu = false) : gpu(gpu) {};
 
-int square_cuda(int base);
+int square(int base);
+int cube(int base);
 
-int cube_cuda(int base);
+int square_cpu(int base);
+int cube_cpu(int base);
+
+void cuda(bool c);
+
+};

@@ -4,9 +4,12 @@
 
 int main(int argc, char **argv) {
 
-    std::cout << square_cpp(2) << std::endl;
+    // bool useGPU = argv[1]
 
-    std::cout << square_cuda(2) << std::endl;
+    SimpleOps* math = new SimpleOps(true);
+
+    std::cout << math->square(2) << std::endl;
+    std::cout << math->cube(2) << std::endl;
     
     return 0;
 }

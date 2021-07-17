@@ -17,6 +17,7 @@ set(PROJECT_INCLUDE_DIR "include")
 set(DEFAULT_SOURCES
         ${PROJECT_SOURCE_DIR}/simple_ops.cpp
         ${PROJECT_INCLUDE_DIR}/math/simple_ops.hpp
+        ${PROJECT_INCLUDE_DIR}/math/cuda_ops.hpp
 )
 
 # Add math library
@@ -34,7 +35,7 @@ if (CMAKE_CUDA_COMPILER)
     set(CUDA_SOURCES
             # CUDA sources
             ${PROJECT_SOURCE_DIR}/cuda/simple_ops.cu
-            # ${PROJECT_INCLUDE_DIR}/math/simple_ops.hpp
+            ${PROJECT_INCLUDE_DIR}/math/cuda_ops.hpp
             )
 
 else ()
